@@ -1,0 +1,28 @@
+#movies img, #movies img {
+    width: 100%;
+    
+}
+
+.well {
+    
+    border-radius: 20px;
+    overflow: none;
+    background: #2b2b2b;
+    margin-top: 20px;
+}
+
+
+
+img {
+    border-radius: 20px;
+}
+
+@media (min-width: 960px) {
+    #movies .col-md-3 .well{
+        height: 390px;
+        margin-top: 20px;
+    }
+    #movies .col-md-3 img{
+        height: 280px;
+    }
+}

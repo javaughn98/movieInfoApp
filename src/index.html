@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Movie Info</title>
+        <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/movieStyle.css">
+
+        <script src="js/jquery.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+       
+       
+       <script>
+            function movieSelected(id) {
+                sessionStorage.setItem('movieID', id);
+                window.location = 'moviePage.html';
+                return false;
+            }     
+        </script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Movie Info</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="jumbotron">
+                <h3 class="text-center">Search for movies</h3>
+                <form class="searchForm" id="searchForm">
+                    <input type="text" class="form-control" id="searchText" placeholder="Search Movie">
+                   
+                </form>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div id="movies" class="row">
+
+            </div>
+
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
