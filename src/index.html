@@ -9,14 +9,9 @@
         <script src="js/jquery.min.js"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
        
-       
-       <script>
-            function movieSelected(id) {
-                sessionStorage.setItem('movieID', id);
-                window.location = 'moviePage.html';
-                return false;
-            }     
-        </script>
+       <!-- allow mixed content request-->
+       <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+     
     </head>
 
     <body>
